@@ -2,30 +2,57 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forms</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Forms</title>
+        <link rel="stylesheet" href="index2.css">
 </head>
 
 <body>
-    <!-- Name -->
-    <input type="text">
-    <!-- Number -->
-    <input type="text">
-    <!-- Location -->
-    <input type="text">
-    <!-- Question with choses -->
-    <input type="radio">
-    <input type="radio">
-    <input type="radio">
-    <!-- Race -->
-    <input type="text">
-    <!-- Time -->
-    <input type="text">
-    <!-- Agree -->
-    <input type="checkbox">
-    <!-- Email -->
-    <input type="email">
+        <form>
+                <!-- Name -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Name">
+
+                <!-- Number -->
+                <label for="number">Number:</label>
+                <input type="text" id="number" placeholder="Number">
+
+                <!-- Location -->
+                <label for="location">Location:</label>
+                <input type="text" id="location" placeholder="Location">
+
+                <!-- Question with choices -->
+                <label>Choose an option:</label>
+                <label for="option1">
+                        <input type="radio" id="option1" name="choice" value="Option 1"> Option 1
+                </label>
+                <label for="option2">
+                        <input type="radio" id="option2" name="choice" value="Option 2"> Option 2
+                </label>
+                <label for="option3">
+                        <input type="radio" id="option3" name="choice" value="Option 3"> Option 3
+                </label>
+
+                <!-- Race -->
+                <label for="race">Race:</label>
+                <input type="text" id="race" placeholder="Race">
+
+                <!-- Time -->
+                <label for="time">Time:</label>
+                <input type="text" id="time" placeholder="Time">
+
+                <!-- Agree -->
+                <label>
+                        <input type="checkbox" id="agree"> I Agree to the Terms and Conditions
+                </label>
+
+                <!-- Email -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Email">
+
+                <button type="submit">Submit</button>
+        </form>
 </body>
 
 </html>
